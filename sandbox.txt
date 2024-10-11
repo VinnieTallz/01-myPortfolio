@@ -1,0 +1,32 @@
+//Now we do it again for the lime theme
+
+
+
+const limeTh = document.querySelector('#limeTheme');
+// Get #limeTheme circle element as a variable limeTh
+
+limeTh.addEventListener('click', function() 
+//Create an event listener.  When lime theme is clicked
+//we begin to execute the function to restyle our page
+
+    {   h6Elements = document.querySelectorAll('h6');
+        h6Elements.forEach(element => {
+            element.style.color = "#ffe400";})
+// Get a list of all h6 elements in the document 
+// Iterate over each h6 item applying  the required style to those elements//
+
+        buttonElements = document.querySelectorAll('button');
+        buttonElements.forEach(element => {
+                element.style.backgroundColor = "#ffe400";});
+
+        borderElements = document.querySelectorAll('.themedBorder');
+        borderElements.forEach(element => {
+                element.style.borderColor = "#ffe400";
+                element.style.borderStyle = "solid";});
+                
+        console.log("lime theme selected");
+        
+    })
+// Create an event listener. When #limeTheme is clicked, we 
+// get an array of elements to style.  Then we iterate over each 
+// item applying  the required style to those elements//
